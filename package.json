@@ -1,0 +1,25 @@
+{
+    "name": "m2-vscode",
+    "displayName": "Modula-2 Language",
+    "description": "Provides syntax highlighting for Modula-2",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "m2lang",
+            "aliases": ["Modula-2", "m2lang"],
+            "extensions": [".mod",".def"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "m2lang",
+            "scopeName": "source.m2lang",
+            "path": "./syntaxes/m2lang.tmLanguage.json"
+        }]
+    }
+}

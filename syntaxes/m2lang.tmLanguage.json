@@ -1,0 +1,94 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Modula-2",
+	"fileTypes": [
+		".mod",
+		".def"
+	],
+	"patterns": [
+		{
+			"name": "keyword.control.m2lang",
+			"match": "\\b(CASE|ELSE|ELSIF|EXIT|FOR|IF|LOOP|REPEAT|RETURN|THEN|UNTIL|WHILE)\\b"
+		},
+		{
+			"name": "keyword.operator.m2lang",
+			"match": "\\b(AND|DIV|IN|MOD|NOT|OR)\\b"
+		},
+		{
+			"name": "keyword.other.m2lang",
+			"match": "\\b(ARRAY|BEGIN|BY|CONST|DEFINITION|DO|END|EXPORT|FROM|IMPLEMENTATION|IMPORT|MODULE|OF|POINTER|PROCEDURE|QUALIFIED|RECORD|SET|TO|TYPE|VAR|WITH)\\b"
+		},
+		{
+			"name": "support.constant.m2lang",
+			"match": "\\b(FALSE|NIL|TRUE)\\b"
+		},
+		{
+			"name": "support.type.m2lang",
+			"match": "\\b(BOOLEAN|BITSET|CARDINAL|CHAR|INTEGER|LONGINT|LONGREAL|PROC|REAL)\\b"
+		},
+		{
+			"name": "support.function.m2lang",
+			"match": "\\b(ABS|CAP|CHR|DEC|DISPOSE|EXCL|FLOAT|HALT|HIGH|INC|INCL|MAX|MIN|NEW|ODD|ORD|SIZE|TRUNC|VAL)\\b"
+		},
+		{
+			"name": "support.type.nonpervasive.m2lang",
+			"match": "\\b(ADDRESS|PROCESS|WORD)\\b",
+			"comment": "Types exported from modules SYSTEM and COROUTINES"
+		},
+		{
+			"name": "support.function.nonpervasive.m2lang",
+			"match": "\\b(ADR|ALLOCATE|DEALLOCATE|NEWPROCESS|TRANSFER|TSIZE)\\b",
+			"comment": "Functions exported from modules SYSTEM and COROUTINES"
+		},
+		{
+			"name": "constant.numeric.character.m2lang",
+			"match": "[0-7]{1,3}C\b"
+		},
+		{
+			"name": "constant.numeric.base8.m2lang",
+			"match": "[0-7]+B\b"
+		},
+		{
+			"name": "constant.numeric.base10.m2lang",
+			"match": "[0-9]+(.[0-9]+([eE][+-]?[0-9]+)?)?"
+		},
+		{
+			"name": "constant.numeric.base16.m2lang",
+			"match": "[0-9][0-9A-F]*H\b"
+		},
+		{
+			"name": "string.quoted.double.m2lang",
+			"match": "\"[^\"]*\""
+		},
+		{
+			"name": "string.quoted.single.m2lang",
+			"match": "'[^']*'"
+		},
+		{
+			"name": "comment.block.m2lang",
+			"begin": "\\(\\*",
+			"end": "\\*\\)",
+			"patterns": [
+				{
+					"include": "#comment.block.m2lang"
+				}
+			]
+		},
+		{
+			"include": "#comment"
+		}
+	],
+	"repository": {
+		"comment": {
+			"name": "comment.block.m2lang",
+			"begin": "\\(\\*",
+			"end": "\\*\\)",
+			"patterns": [
+				{
+					"include": "#comment"
+				}
+			]
+		}
+	},
+	"scopeName": "source.m2lang"
+}
