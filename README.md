@@ -1,5 +1,5 @@
-Modula-2 syntax highlighting for Visual Studio Code
-===================================================
+Modula-2 syntax highlighting and snippets for Visual Studio Code
+================================================================
 
 This is the README for your extension "m2-vscode". After writing up a brief description, we recommend including the following sections.
 

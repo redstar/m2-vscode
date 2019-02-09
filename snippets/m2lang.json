@@ -1,0 +1,28 @@
+{
+	"var_declaration": {
+		"scope": "source.m2lang",
+		"prefix": "VAR",
+		"body": [
+			"VAR ${1:name}: ${0:type}"
+		],
+		"description": "Variable declaration"
+	},
+	"const_declaration": {
+		"scope": "source.m2lang",
+		"prefix": "CONST",
+		"body": [
+			"CONST ${1:name}= ${0:value}"
+		],
+		"description": "Constant declaration"
+	},
+	"loop_statement": {
+		"scope": "source.m2lang",
+		"prefix": "LOOP",
+		"body": [
+			"LOOP",
+			"  ${0}",
+			"END"
+		],
+		"description": "LOOP statement"
+	}
+}
