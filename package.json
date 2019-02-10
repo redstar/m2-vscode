@@ -12,18 +12,18 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "m2lang",
-            "aliases": ["Modula-2", "m2lang"],
+            "id": "m2",
+            "aliases": ["Modula-2", "modula-2", "m2lang", "m2"],
             "extensions": [".mod",".def"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "m2lang",
+            "language": "m2",
             "scopeName": "source.m2lang",
             "path": "./syntaxes/m2lang.tmLanguage.json"
         }],
         "snippets": [{
-            "language": "m2lang",
+            "language": "m2",
             "scopeName": "source.m2lang",
             "path": "./snippets/m2lang.json"
         }]
