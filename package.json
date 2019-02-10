@@ -3,8 +3,21 @@
     "displayName": "Modula-2",
     "description": "Provides syntax highlighting and snippets for Modula-2",
     "version": "0.0.1",
+    "publisher": "redstar",
+	"author": {
+		"name": "Kai Nacke"
+    },
+    "license": "BSD-3-Clause",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/redstar/m2-vscode"
+	},
+	"bugs": {
+		"url": "https://github.com/redstar/m2-vscode/issues"
+	},
+	"homepage": "https://github.com/redstar/m2-vscode/blob/master/README.md",
     "engines": {
-        "vscode": "^1.31.0"
+        "vscode": "^1.0.0"
     },
     "categories": [
         "Programming Languages",

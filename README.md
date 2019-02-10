@@ -22,7 +22,7 @@ This extension provides syntax highlihting and snippets for Modula-2.
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
 
 Initial release of [m2-vscode](https://github.com/redstar/m2-vscode).
 
