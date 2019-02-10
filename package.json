@@ -1,6 +1,6 @@
 {
     "name": "m2-vscode",
-    "displayName": "Modula-2 Language",
+    "displayName": "Modula-2",
     "description": "Provides syntax highlighting and snippets for Modula-2",
     "version": "0.0.1",
     "engines": {
