@@ -5,9 +5,9 @@ This extension provides syntax highlihting and snippets for Modula-2.
 
 ## Features
 
-\!\[Syntax highlighting\]\(images/syntaxhighlighting.png\)
+![Syntax highlighting](images/syntaxhighlighting.png)
 
-\!\[Snippets\]\(images/snippets.png\)
+![Snippets](images/snippets.png)
 
 ## Known Issues
 
