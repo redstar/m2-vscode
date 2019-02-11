@@ -11,7 +11,7 @@
 		"scope": "source.m2lang",
 		"prefix": "CONST",
 		"body": [
-			"CONST ${1:name}= ${0:value}"
+			"CONST ${1:name} = ${0:value}"
 		],
 		"description": "Constant declaration"
 	},
@@ -24,5 +24,101 @@
 			"END"
 		],
 		"description": "LOOP statement"
+	},
+	"while_statement": {
+		"scope": "source.m2lang",
+		"prefix": "WHILE",
+		"body": [
+			"WHILE ${1:expr} DO",
+			"  ${0}",
+			"END"
+		],
+		"description": "WHILE statement"
+	},
+	"case_statement": {
+		"scope": "source.m2lang",
+		"prefix": "CASE",
+		"body": [
+			"CASE ${1:expr} OF",
+			"  ${2:label}: ${0}",
+			"END"
+		],
+		"description": "WHILE statement"
+	},
+	"if_statement": {
+		"scope": "source.m2lang",
+		"prefix": "IF",
+		"body": [
+			"IF ${1:expr} THEN",
+			"  ${0}",
+			"END"
+		],
+		"description": "IF statement"
+	},
+	"ifelse_statement": {
+		"scope": "source.m2lang",
+		"prefix": "IF",
+		"body": [
+			"IF ${1:expr} THEN",
+			"  ${2}",
+			"ELSE",
+			"  ${0}",
+			"END"
+		],
+		"description": "IF/ELSE statement"
+	},
+	"ifelsifelse_statement": {
+		"scope": "source.m2lang",
+		"prefix": "IF",
+		"body": [
+			"IF ${1:expr} THEN",
+			"  ${2}",
+			"ELSIF ${3:expr} THEN",
+			"  ${4}",
+			"ELSE",
+			"  ${0}",
+			"END"
+		],
+		"description": "IF/ELSIF/ELSE statement"
+	},
+	"elsif_statement": {
+		"scope": "source.m2lang",
+		"prefix": "ELSIF",
+		"body": [
+			"ELSIF ${1:expr} THEN",
+			"  ${0}",
+			"END"
+		],
+		"description": "ELSIF statement"
+	},
+	"for_statement": {
+		"scope": "source.m2lang",
+		"prefix": "FOR",
+		"body": [
+			"FOR ${1:ident} := ${2:expr} TO ${3:expr} DO",
+			"  ${0}",
+			"END"
+		],
+		"description": "FOR statement"
+	},
+	"forby_statement": {
+		"scope": "source.m2lang",
+		"prefix": "FOR",
+		"body": [
+			"FOR ${1:ident} := ${2:expr} TO ${3:expr} BY ${4:expr} DO",
+			"  ${0}",
+			"END"
+		],
+		"description": "FOR/BY statement"
+	},
+	"with_statement": {
+		"scope": "source.m2lang",
+		"prefix": "WITH",
+		"body": [
+			"WITH ${1:expr} DO",
+			"  ${0}",
+			"END"
+		],
+		"description": "WITH statement"
 	}
 }
