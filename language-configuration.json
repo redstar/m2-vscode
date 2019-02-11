@@ -22,5 +22,9 @@
         ["(*", "*)"],
         ["\"", "\""],
         ["'", "'"]
-    ]
+    ],
+    "indentationRules": {
+		"increaseIndentPattern": "^\\s*(BEGIN|DO|ELSE|ELSIF|LOOP|OF|THEN|RECORD|REPEAT|TO)$",
+		"decreaseIndentPattern": "^\\s*END(\\s*;|\\s*\\w+\\.)$"
+	}
 }

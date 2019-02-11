@@ -13,6 +13,8 @@ This extension provides syntax highlihting and snippets for Modula-2.
 
 ![Snippets](images/snippets.png)
 
+* Indentation
+
 ## Known Issues
 
 * Supports only PIM4.
