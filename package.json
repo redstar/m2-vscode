@@ -15,7 +15,8 @@
 	"bugs": {
 		"url": "https://github.com/redstar/m2-vscode/issues"
 	},
-	"homepage": "https://github.com/redstar/m2-vscode/blob/master/README.md",
+    "homepage": "https://github.com/redstar/m2-vscode/blob/master/README.md",
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.0.0"
     },
